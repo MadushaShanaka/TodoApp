@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css27family:wght@300;400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --red: red;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: var(--red);
+}
+
+.theme-dark {
+  --main-bg: hsl(235, 21%, 11%);
+  --todo-bg: hsl(235, 24%, 19%);
+  --todo-shadow: hsl(235, 21%, 11%);
+  --font-color: hsl(234, 39%, 85%);
+  --font-color--hover: #fff;
+}
+
+.theme-light {
+  --main-bg: hsl(0, 0%, 98%);
+  --todo-bg: hsl(0, 0%, 98%);
+  --todo-shadow: hsl(235, 19%, 35%);
+  --font-color: hsl(236, 9%, 61%);
+  --font-color--hover: hsl(235, 21%, 11%);
+}

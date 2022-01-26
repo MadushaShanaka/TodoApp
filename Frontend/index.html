@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Todo app</title>
+    >
+  </head>
+  <body>
+    <header>
+      <h1>TODO</h1>
+      <div class="theme-block">
+        <input type="checkbox" name="theme" id="theme " />
+        <label for="theme"></label>
+      </div>
+    </header>
+
+    <main>
+      <div class="add-new-item">
+        <span></span>
+        <input
+          type="text"
+          placeholder="Create a neew todo"
+          name="addItem"
+          id="addItem"
+        />
+      </div>
+      <section class="content">
+        <ul>
+          <li>
+            <label for="" class="list-item">
+              <input type="checkbox" name="todoItem" checked />
+              <span class="checkmark"></span>
+              <span class="text">Text 1</span>
+            </label>
+          </li>
+          <li>
+            <label for="" class="list-item">
+              <input type="checkbox" name="todoItem" checked />
+              <span class="checkmark"></span>
+              <span class="text">Text 1</span>
+            </label>
+          </li>
+          <li>
+            <label for="" class="list-item">
+              <input type="checkbox" name="todoItem" checked />
+              <span class="checkmark"></span>
+              <span class="text">Text 1</span>
+            </label>
+          </li>
+        </ul>
+      </section>
+
+      <div class="bottom">
+        <div class="item-left"><span>2</span> item left</div>
+        <div class="item-filter flex-row">
+          <label>
+            <input type="radio" name="filter" id="all" checked />
+            <span>All</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="active" checked />
+            <span>Active</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="done" checked />
+            <span>Done</span>
+          </label>
+        </div>
+        <span class="clear">Clear Completed</span>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
